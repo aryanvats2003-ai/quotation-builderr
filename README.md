@@ -17,6 +17,6 @@ This repository contains a full-stack Quotation Builder (backend + frontend) rea
 - Frontend: Vercel (point to `frontend/`)
 
 Default admin credentials (after running `init-admin` or via seed):
-- Email: admin@easemytrip.com
+- Email: Aryanvats2003@gmail.com
 - Password: admin123
 
