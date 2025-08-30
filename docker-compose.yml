@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: quotation-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - JWT_SECRET=supersecretjwt
+      - ADMIN_EMAIL=admin@easemytrip.com
+      - ADMIN_PASSWORD=admin123
+  frontend:
+    build: ./frontend
+    container_name: quotation-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:5000
