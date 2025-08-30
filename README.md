@@ -13,7 +13,15 @@ This repository contains a full-stack Quotation Builder (backend + frontend) rea
    Backend API: http://localhost:5000
 
 ## Deploy
-- Backend: Render / Railway (point to `backend/`)
+- Backend: Render / ### 🚀 Deploy Backend on Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+> After clicking, connect your GitHub repo → select the `backend` folder →  
+> Build Command: `npm install`  
+> Start Command: `node server.js`  
+> Add Environment Variables (from `.env.example`):
+Railway (point to `backend/`)
 - Frontend: Vercel (point to `frontend/`)
 
 Default admin credentials (after running `init-admin` or via seed):
